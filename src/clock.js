@@ -27,6 +27,6 @@ clock();
 setInterval(clock, 1000);
 
 document.querySelector('.toggle-btn').addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  document.body.classList.toggle('light');
+  document.querySelector('.container').classList.toggle('dark');
+  document.querySelector('.container').classList.toggle('light');
 });
