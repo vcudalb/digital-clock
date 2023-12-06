@@ -1,0 +1,65 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 35px;
+    background: #ffd1dc;
+    font-family: "Ubuntu";
+    animation: rotate 5s infinite alternate linear;
+}
+
+.circle{
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 50% 56% 63% 42% / 48% 53% 52% 55%;
+    background: cornflowerblue;
+}
+
+.circle:after{
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: #1d1f38;
+}
+
+.card{
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 25px;
+    padding: 165px 35px 43px;
+    border-radius: 1.25rem;
+    text-align: center;
+    box-shadow: 0 100px 100px rebeccapurple;
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    background: aquamarine;
+    top: -880px;
+    left: -50%;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    translate: -50% 0;
+}
