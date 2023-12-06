@@ -1,35 +1,35 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
     display: grid;
     place-items: center;
     margin: 0;
-    padding: 0 35px;
-    background: #ffd1dc;
+    padding: 0 32px;
+    background: #FFC3A1;
     font-family: "Ubuntu";
     animation: rotate 5s infinite alternate linear;
 }
 
-.circle{
+.circle {
     position: fixed;
     top: -50vmin;
     left: -50vmin;
     width: 100vmin;
     height: 100vmin;
-    border-radius: 50% 56% 63% 42% / 48% 53% 52% 55%;
-    background: cornflowerblue;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+    background: #D3756B;
 }
 
-.circle:after{
+.circle::after {
     content: "";
     position: inherit;
     right: -50vmin;
@@ -37,29 +37,122 @@ body{
     width: inherit;
     height: inherit;
     border-radius: inherit;
-    background: #1d1f38;
+    background: #A75D5D;
 }
 
-.card{
+.card {
     overflow: hidden;
     position: relative;
     z-index: 3;
     width: 100%;
-    margin: 0 25px;
-    padding: 165px 35px 43px;
+    margin: 0 20px;
+    padding: 160px 30px 38px;
     border-radius: 1.25rem;
+    background: #F2ECBE;
     text-align: center;
-    box-shadow: 0 100px 100px rebeccapurple;
+    box-shadow: 0 100px 100px #E2C799;
 }
 
-.card:before{
+.card::before {
     content: "";
     position: absolute;
-    background: aquamarine;
+    background: #C08261;
     top: -880px;
-    left: -50%;
+    left: 50%;
     width: 1000px;
     height: 1000px;
     border-radius: 50%;
     translate: -50% 0;
+}
+
+.card .logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #9A3B3B;
+    height: 64px;
+    width: 64px;
+    top: 30px;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.card .logo i {
+    font-size: 50px;
+    color: bisque;
+    font-weight: 500;
+}
+
+.card > h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 30px;
+    color: crimson;
+}
+
+.form {
+    margin: 0 0 30px;
+    display: grid;
+    gap: 18px;
+}
+
+.form > input, .form > button {
+    width: 100%;
+    height: 50px;
+    border-radius: 28px;
+}
+
+.form > input {
+    border: 2px solid #ffd1dc;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 24px;
+    color: darkgreen;
+    transition: all 1s;
+}
+
+.form > input:hover {
+    border: 2px solid darkmagenta;
+}
+
+.form > input::placeholder {
+    color: gold;
+}
+
+.form > button {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    background: rosybrown;
+    color: mediumspringgreen;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 1s;
+}
+
+.form > button:hover {
+    color: #ffd1dc;
+    background: cadetblue;
+}
+
+.card > footer > a:hover {
+    color: coral;
+}
+
+@media (width >= 500px) {
+    body {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0;
+        width: 360px;
+    }
 }
