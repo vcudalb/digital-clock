@@ -148,8 +148,8 @@ body {
 }
 
 .form > button:hover {
-    color: #1b3633;
-    background: #a75d5d;
+    color: #f9fcfb;
+    background: #C08261;
     transform: scale(1.08);
 }
 
